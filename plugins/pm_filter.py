@@ -90,7 +90,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                   text=f"🔖{get_size(file.file_size)}🔮{file.file_name}", callback_data=f'{pre}#{file.file_id}'
+                   text=f"🔮{file.file_name}◾{get_size(file.file_size)}", callback_data=f'{pre}#{file.file_id}'
                 ),
             ]
             for file in files
